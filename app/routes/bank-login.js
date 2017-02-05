@@ -1,4 +1,16 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
+var BankLoginRoute =  Ember.Route.extend({
+	
+	renderTemplate() {
+	    this.render('bank-login',{});
+	  },
+	
+	 setupController(controller, model){
+		 
+		  controller.set('message', 'Welcome to bank'); 
+		  
+	 }
 });
+
+export default BankLoginRoute;
