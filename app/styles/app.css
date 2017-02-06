@@ -1,0 +1,46 @@
+html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          background-image: url("bank_login_bg.jpg");
+          background-repeat: repeat-x;
+      }
+
+.login {
+color:#42cbf4;
+vertical-align: middle;
+text-align: center;
+}
+
+button{
+  background-color: rgba(230, 230, 230, 0.5);
+  width: 60%;
+  position: relative;
+  align-self: center;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+.table-login{
+  background-color: rgba(66,203,244,0.5);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  border-spacing: 5px;
+}
+
+thead{
+  vertical-align: middle;
+  text-align: center;
+  align-self: center;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
