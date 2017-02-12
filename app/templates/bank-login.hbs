@@ -3,14 +3,28 @@
 
 
 <div class="login">
-  <h1> Welcome to Tamilnadu Development Bank </h1>
+   <h1>Welcome to Tamil Nadu Development Bank </h1>
 </div>
-<center><h3 style="color:#42cbf4;">Login</h3></center>
-<table class='table-login'>
-  <tr><th>Customer Id:</th> <td><input type="text"/></td> </tr>
-  <tr><th>Password:</th> <td><input type="password"/></td></tr>
-  <tr><td></td><td><button>login</button></td></tr>
-</table>
+
+
+<div class="container-sm container-fluid">
+    <div class="form-group">
+        <div class="div-center">
+
+
+          <div class="col-sm-offset-2 ">
+            <div class="table table-responsive table-registration">
+                <span> <h3 class="col-sm-offset-4">Login</h3></span>
+              <table class="col-sm-12 input-group-sm">
+                <tr><td>{{input type="number" class="input-md" placeholder="customer id" pattern="[0-9]" maxlength="8" value=model.customerid}}</td> </tr>
+                <tr><td>{{input type="password" class="input-md" placeholder="password" value=model.password}}</td></tr>
+                <tr><td><button{{action 'validateUserLogin' model}}>login</button></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
 
 
 </html>

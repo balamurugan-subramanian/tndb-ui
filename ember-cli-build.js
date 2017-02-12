@@ -6,9 +6,15 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
 	  storeConfigInMeta: false
   });
-  
+
   //app.options.storeConfigInMeta = false;
 
+  app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+  app.import('bower_components/bootstrap/dist/css/bootstrap-theme.css');
+  app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+
+
+  
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
