@@ -1,11 +1,11 @@
 html, body {
-          height: 100%;
-          margin: 0;
-          padding: 0;
-          width: 100%;
-          background-image: url("bank_login_bg.jpg");
-          background-repeat: repeat-x;
-      }
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: url("bank_login_bg.jpg");
+  background-repeat: repeat-x;
+}
 
 .login {
   color:#42cbf4;
@@ -13,7 +13,7 @@ html, body {
   text-align: center;
 }
 
-button{
+.button-login{
   background-color: rgba(230, 230, 230, 0.5);
   width: 60%;
   border-radius: 10px;
@@ -21,20 +21,53 @@ button{
 }
 
 
+.center1
+{
+position: absolute;
+top:20%;
+margin-left: 50%;
+margin-right: auto;
+width: 10%;
+}
+
+.center2
+{
+text-align: center;
+}
+
+caption {
+    caption-side: top;
+    padding:5%;
+    text-align: center;
+}
 
 .table-registration{
+  position:absolute;
   background-color: rgba(66,203,244,0.25);
-  height: 100%;
+  margin-top: 5%;
+  margin-left:25% ;
+  margin-right:20% ;
+  margin-bottom: 5% ;
+  padding:5%;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.table-login{
+  background-color: rgba(66,203,244,0.25);
   margin: 0;
   padding: 5%;
   width: 40%;
   border: 1px solid black;
   border-radius: 10px;
+  height: 100%;
+  table-layout: fixed;
 }
 
 
 
-input{
+.input-login{
     text-align: center;
     width: 90%;
     border-radius: 20px;
@@ -42,8 +75,18 @@ input{
     margin: 0;
 }
 
-td{
-    padding :2%;
+.input-reg{
+    text-align: center;
+    margin-left:70%;
+    margin-right:20%;
+    width: 200%;
+    border-radius: 20px;
+    border-spacing: 0%;
+    padding :6%;
+}
+
+.td-form{
+    padding :10%;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -51,14 +94,16 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-
-
-table{
-  height: 100%;
-  table-layout: fixed;
-  padding: 10%;
+.registration-link{
+  color:black;
+  font-weight:900;
+  line-height:50px;
 }
+
+.registration-header{
+  margin-left:35%;
+}
+
 
 th, td {
     text-align: center;

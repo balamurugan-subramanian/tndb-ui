@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('bank-login');
+  this.route('bank-registration');
 });
 
 export default Router;

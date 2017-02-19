@@ -15,6 +15,11 @@ validateUserLogin:function(model){
 		}, function(reason){
 			console.log(reason);
 		});
+},
+
+navigateToRegistration: function(){
+	this.transitionToRoute("bank-registration");
+
 }
 
 

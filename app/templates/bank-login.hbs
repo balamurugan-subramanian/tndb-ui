@@ -8,22 +8,25 @@
 
 
 <div class="container-sm container-fluid">
+  <form data-toggle="validator" role="form">
     <div class="form-group">
         <div class="div-center">
 
 
-          <div class="col-sm-offset-2 ">
-            <div class="table table-responsive table-registration">
-                <span> <h3 class="col-sm-offset-4">Login</h3></span>
-              <table class="col-sm-12 input-group-sm">
-                <tr><td>{{input type="number" class="input-md" placeholder="customer id" pattern="[0-9]" maxlength="8" value=model.customerid}}</td> </tr>
-                <tr><td>{{input type="password" class="input-md" placeholder="password" value=model.password}}</td></tr>
-                <tr><td><button{{action 'validateUserLogin' model}}>login</button></td></tr>
-              </table>
+          <div class="col-sm-offset-2">
+            <div class="table table-responsive table-login">
+                <span> <h3 class="col-sm-offset-4 panel-heading">Login</h3></span>
+                <table class="col-sm-12 input-group-sm input-login">
+                  <tr><td class="td-form">{{input type="text" class="input-md" placeholder="customer id" pattern="[0-9]" maxlength="6" value=model.customerid  }}</td> </tr>
+                  <tr><td class="td-form">{{input type="password" class="input-md" placeholder="password" maxlength="8" value=model.password  }}</td></tr>
+                  <tr><td class="td-form"><button  class="button-login" {{action 'validateUserLogin' model}}>login</button></td></tr>
+                </table>
+                   <div class="col-sm-offset-8"><a class="registration-link" {{action 'navigateToRegistration'}}>Registration</a></div>
             </div>
-          </div>
-        </div>
-    </div>
+           </div>
+         </div>
+      </div>
+  </form>
 </div>
 
 
